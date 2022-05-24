@@ -1,0 +1,95 @@
+.jh-subject-card {
+  position: relative;
+  padding: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+
+  .jh-subject-hd {
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    color: #999;
+    font-size: 12px;
+
+    .jh-subject-line {
+      width: 3px;
+      height: 10px;
+      background-color: #31ce8c;
+    }
+
+    .jh-subject-title {
+      margin-left: 5px;
+      color: #434343;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+
+  .jh-subject-bd {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    min-height: 44px;
+
+    .jh-subject-cell {
+      width: 50%;
+      color: #999;
+      font-size: 12px;
+
+      em {
+        font-style: normal;
+        font-weight: bold;
+
+        &.jh-subject-highlight {
+          color: #31ce8c;
+        }
+      }
+
+      .jh-subject-text {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .jh-subject-nums {
+        display: flex;
+        align-items: flex-end;
+        color: #333;
+        font-size: 18px;
+      }
+    }
+
+    &.jh-subject-single {
+      align-items: flex-end;
+
+      .jh-subject-nums {
+        font-size: 14px;
+
+        .jh-subject-major {
+          line-height: 22px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .jh-subject-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 44px;
+    height: 39px;
+    background: url(https://resource.lanniuh.com/just-fe/mobile/bg02.png) no-repeat;
+    background-size: 44px 39px;
+  }
+
+  &-single {
+    .jh-subject-bg {
+      width: 39px;
+      height: 37px;
+      background: url(https://resource.lanniuh.com/just-fe/mobile/bg01.png) no-repeat;
+      background-size: 39px 37px;
+    }
+  }
+}

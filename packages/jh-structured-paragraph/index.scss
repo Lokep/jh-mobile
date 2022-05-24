@@ -1,0 +1,15 @@
+.jh-paragraph {
+  padding: 15px;
+
+  &-hd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+    h3 {
+      font-size: 20px;
+      color: #31ce8c;
+    }
+  }
+}

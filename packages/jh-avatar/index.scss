@@ -1,0 +1,49 @@
+.jh-avatar {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  background-color: #c0c4cc;
+  line-height: 40px;
+  font-size: 14px;
+  color: #fff;
+
+  >img {
+    display: block;
+    height: 100%;
+  }
+
+  @at-root {
+    &-circle {
+      border-radius: 50%;
+    }
+
+    &-square {
+      border-radius: 4px;
+    }
+
+    &-icon {
+      font-size: 18px;
+    }
+
+    &-large {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+    }
+
+    &-medium {
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+    }
+
+    &-small {
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+    }
+  }
+}

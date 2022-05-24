@@ -1,0 +1,40 @@
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.align-bottom {
+  display: flex;
+  align-items: flex-end;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+// 移动端 锚点 样式
+//----------------------------------------
+.anchor {
+  display: block;
+  margin: 0;
+  padding: 16px 0;
+  line-height: 16px;
+  border: none;
+  font-weight: normal;
+  font-size: 14px;
+
+  & ~ & {
+    margin-top: 20px;
+  }
+}

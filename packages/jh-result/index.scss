@@ -1,0 +1,58 @@
+.jh-result {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  min-height: 100vh;
+  background-color: #fff;
+
+  &-hd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 68px 0 16px;
+
+    .jh-result-icon {
+      margin-bottom: 35px;
+      width: 60px;
+      height: 60px;
+    }
+
+    .jh-result-title {
+      font-size: 20px;
+    }
+  }
+
+  &-success {
+    .jh-result-title {
+      color: #3bba68;
+    }
+  }
+
+  &-fail {
+    .jh-result-title {
+      color: #e52c2c;
+    }
+  }
+
+  &-bd {
+    padding: 12px 15px;
+    width: calc(100% - 30px);
+    background-color: #f8f8f8;
+    font-size: 18px;
+    color: #666;
+
+    .jh-result-subtitle {
+      text-align: center;
+    }
+  }
+
+  &-ft {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}

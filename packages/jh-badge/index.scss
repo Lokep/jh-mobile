@@ -1,0 +1,59 @@
+@import '../common/style/var.scss';
+@import '../common/style/mixins.scss';
+
+.jh {
+  &-badge {
+    display: inline-block;
+    position: relative;
+
+    &__wrapper {
+      background-color: #FF9F40;
+      border-radius: 10px;
+      white-space: nowrap;
+      font-size: 12px;
+      line-height: 20px;
+      /* identical to box height */
+      color: $white;
+      text-align: center;
+      display: inline-block;
+      min-width: 20px;
+      // min-width: 8px;
+      // padding: 0 6px;
+
+      &.right, &.left {
+        position: absolute;
+        top: 0;
+        height: 20px;
+      }
+
+      &.right {
+        right: 0;
+        transform: translate(50%, -50%);
+      }
+      &.left {
+        left: 0;
+        transform: translate(-50%, -50%);
+      }
+
+      &--bubble {
+        border-radius: 10px 10px 10px 0;
+      }
+    }
+
+    &__slot{
+      & + .jh-badge__content {
+        display: none;
+      }
+      &:empty {
+        & + .jh-badge__content {
+          display: block;
+        }
+      }
+    }
+
+    &__content {
+      padding: 0 6px;
+      max-width: inherit;
+    }
+  }
+}

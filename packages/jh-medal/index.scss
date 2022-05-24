@@ -1,0 +1,58 @@
+.jh-medal {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  padding: 12px 0;
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  &-star {
+    background: url(https://resource.lanniuh.com/just-fe/mobile/medal-bg-01.png) no-repeat center;
+    background-size: cover;
+  }
+
+  &-model {
+    background: url(https://resource.lanniuh.com/just-fe/mobile/medal-bg-02.png) no-repeat;
+    background-size: cover;
+  }
+
+  &-expert {
+    background: url(https://resource.lanniuh.com/just-fe/mobile/medal-bg-03.png) no-repeat;
+    background-size: cover;
+  }
+
+  &-newbie {
+    background: url(https://resource.lanniuh.com/just-fe/mobile/medal-bg-04.png) no-repeat;
+    background-size: cover;
+  }
+
+  &-thumb {
+    margin: 0 20px 0 15px;
+    width: 125px;
+    height: 125px;
+  }
+
+  &-bd {
+    flex: 1;
+    margin-right: 15px;
+    color: #fff;
+    font-size: 15px;
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+  }
+  &--content {
+    display: none;
+  }
+
+  &--slot {
+    &:empty + .jh-medal--content {
+      display: block;
+    }
+  }
+}

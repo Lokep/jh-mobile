@@ -1,0 +1,79 @@
+@import '../common/style/var.scss';
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  to {
+    background-position: 0 50%;
+  }
+}
+
+.animate {
+  background: linear-gradient(90deg, #f2f3f5 25%, #dcdee0 37%, #f2f2f2 63%);
+  background-size: 400% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+
+.jh-sketelon {
+  display: flex;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 4px;
+
+  &--bg {
+    background-color: #f2f3f5;
+  }
+
+  &--hd,
+  &--ft {
+    flex-shrink: 0;
+  }
+
+  &--bd {
+    flex: 1;
+  }
+
+  &--avatar,
+  &--title,
+  &--row,
+  &--ft {
+    background-color: #f2f3f5;
+
+    &.animate {
+      background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+      background-size: 400% 100%;
+      animation: skeleton-loading 1.4s ease infinite;
+    }
+  }
+
+  &--avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+
+    margin-right: $margin-xs;
+  }
+
+  &--title {
+    height: 20px;
+    width: 50%;
+    margin-bottom: $margin-xs;
+  }
+
+  &--row {
+    height: 20px;
+    margin-bottom: $margin-base;
+  }
+
+  &--ft {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+
+    align-self: center;
+    margin-left: $margin-xs;
+  }
+}

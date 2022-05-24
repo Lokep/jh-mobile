@@ -1,0 +1,53 @@
+@import '../common/style/mixins.scss';
+@import '../common/style/var.scss';
+
+
+.jh-empty {
+
+  &-img {
+    max-width: 184px;
+    margin: 0 auto 20px;
+    height: 130px;
+
+    img {
+      max-width: inherit;
+      height: inherit;
+      display: block;
+      margin: 0 auto;
+    }
+
+    &--default {
+      display: none!important;
+    }
+
+    &--slot {
+
+      img, image {
+        height: 130px;
+        max-width: 184px;
+      }
+
+      &:empty + .jh-empty-img--default {
+        display: block!important;
+      }
+    }
+  }
+
+  &-desc {
+    text-align: center;
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #999;
+
+    &--default {
+      display: none;
+    }
+
+    &--slot {
+      &:empty + .jh-empty-desc--default {
+          display: block;
+      }
+    }
+  }
+}

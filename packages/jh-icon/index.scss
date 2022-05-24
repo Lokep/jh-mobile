@@ -1,0 +1,67 @@
+@import '../common/style/iconfont.scss';
+
+.jh-icon {
+  display: inline-flex;
+  align-items: center;
+
+  &-left {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  &-right {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &-top {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  &-bottom {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-font {
+    position: relative;
+
+    &-primary {
+      color: #2979ff;
+    }
+
+    &-success {
+      color: #19be6b;
+    }
+
+    &-error {
+      color: #fa3534;
+    }
+
+    &-warning {
+      color: #f90;
+    }
+
+    &-info {
+      color: #909399;
+    }
+  }
+
+  &-decimal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  &-img {
+    height: auto;
+    will-change: transform;
+  }
+
+  &-label {
+    line-height: 1;
+  }
+}

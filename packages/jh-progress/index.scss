@@ -1,0 +1,13 @@
+@import '../common/style/mixins.scss';
+@import '../common/style/var.scss';
+
+.jh {
+  &-progress {
+    overflow: hidden;
+    &--bar {
+      height: inherit;
+      border-radius: inherit;
+      transition: width 0.3s ease-in-out;
+    }
+  }
+}

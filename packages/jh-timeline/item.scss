@@ -1,0 +1,28 @@
+@import '../common/style/mixins.scss';
+@import '../common/style/var.scss';
+
+.jh-timeline {
+  &-step {
+    @include align-center;
+
+    &--icon {
+      width: 12px;
+      height: 12px;
+      border: 2px solid $blue;
+      box-sizing: border-box;
+      margin-right: 8px;
+    }
+
+    &--node {
+      font-style: normal;
+      font-weight: normal;
+      font-size: $font-size-xs;
+      line-height: 20px;
+    }
+  }
+  &--slot {
+    padding: 16px 0 16px 18px;
+    margin-left: 6px;
+    border-left: 1px solid $gray-2;
+  }
+}

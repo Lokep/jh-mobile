@@ -1,4 +1,8 @@
 {
+  "include": [
+    "./justui/*"
+  ],
+  "exclude": [],
   "compilerOptions": {
     "types": [
       "@dcloudio/types",

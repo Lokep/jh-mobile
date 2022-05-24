@@ -1,0 +1,93 @@
+.jh-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: none;
+  user-select: none;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid $gray-2;
+  box-sizing: border-box;
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  border-radius: 8px;
+  // text-align: center;
+  // vertical-align: middle;
+
+  &--content {
+    @include align-center();
+    font-size: inherit;
+    margin: 0 $margin-xs;
+  }
+
+  &--block {
+    width: 100%;
+  }
+
+  &--normal {
+    padding: 8px 16px;
+
+    &.jh-button--round {
+      border-radius: 100px;
+    }
+  }
+
+  &--small {
+    padding: 4px 16px;
+
+    &.jh-button--round {
+      border-radius: 50px;
+    }
+  }
+
+  &--primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+
+  &--success {
+    background-color: $success-color;
+    border-color: $success-color;
+  }
+
+  &--warning {
+    background-color: $warning-color;
+    border-color: $warning-color;
+  }
+
+  &--danger {
+    background-color: $danger-color;
+    border-color: $danger-color;
+  }
+
+  &--disabled {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+
+  &--plain {
+    background-color: transparent;
+    color: $blue;
+
+    &.jh-button--primary {
+      color: $primary-color;
+    }
+
+    &.jh-button--success {
+      color: $success-color;
+    }
+
+    &.jh-button--warning {
+      color: $warning-color;
+    }
+
+    &.jh-button--danger {
+      color: $danger-color;
+    }
+
+
+  }
+}

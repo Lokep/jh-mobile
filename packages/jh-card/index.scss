@@ -1,0 +1,15 @@
+.jh-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+
+  @at-root {
+    &-shadow {
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &-hd {
+    padding: 12px 0;
+  }
+}
