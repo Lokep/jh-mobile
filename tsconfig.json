@@ -1,8 +1,8 @@
 {
   "include": [
-    "./justui/*"
+    "/packages/*"
   ],
-  "exclude": [],
+  "exclude": ["/node_modules"],
   "compilerOptions": {
     "types": [
       "@dcloudio/types",

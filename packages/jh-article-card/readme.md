@@ -35,21 +35,21 @@
 ```html
 <template>
   <jh-article-card :title="title">
-    <img class="article-cover" :src="cover" :alt="title" slot="header"/>
+    <img class="article-cover" :src="cover" :alt="title" slot="header" />
     <p>共计 8 个视频</p>
-    <img class="article-icon" :src="icon" slot="footer"/>
+    <img class="article-icon" :src="icon" slot="footer" />
   </jh-article-card>
 </template>
 <script>
-export default {
-  data () {
-    return {
-      cover: "https://resource.lanniuh.com/Shuliao/bg_shuliao.png",
-      title: "妈妈应该怎么清洗宝宝的伤口以及该注意的事项",
-      icon: "https://resource.lanniuh.com/Remedy/arrow.png",
+  export default {
+    data() {
+      return {
+        cover: "https://resource.lanniuh.com/Shuliao/bg_shuliao.png",
+        title: "妈妈应该怎么清洗宝宝的伤口以及该注意的事项",
+        icon: "https://resource.lanniuh.com/Remedy/arrow.png",
+      }
     }
   }
-}
 </script>
 ```
 
@@ -60,8 +60,8 @@ export default {
 ```html
 <template>
   <jh-article-card :title="title" isRead>
-    <img class="article-cover-02" :src="cover" :alt="title" slot="header"/>
-    <jh-icon name="success" color="green" size="28" slot="footer"/>
+    <img class="article-cover-02" :src="cover" :alt="title" slot="header" />
+    <jh-icon name="success" color="green" size="28" slot="footer" />
   </jh-article-card>
 </template>
 ```
